@@ -70,7 +70,6 @@ int main() {
     tokenizeWithStrTok(line, token_count, &token_vector);
     if (strcmp(token_vector[0], "cd") == 0) {
       chdir(token_vector[1]);
-      printf("cd detected\n");
     } else if (strcmp(token_vector[0], "pwd") == 0) {
       char dir[64];
       getcwd(dir, sizeof(dir));
